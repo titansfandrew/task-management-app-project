@@ -74,7 +74,7 @@ function TodoList({ title }) {
     <div className="container">
       <h4>{title}</h4>
       <div>
-        <span>Add New Task: </span>
+        <span>Add New Task:  </span>
         <input
           type="text"
           value={txtnewitem}

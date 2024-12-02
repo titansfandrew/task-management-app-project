@@ -6,5 +6,9 @@
     align-items: center;
   }
 
-
-  
+h4 {
+  color: blue;
+}
+span {
+  color: peru;
+}

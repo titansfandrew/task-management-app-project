@@ -103,22 +103,24 @@ function ContactUs() {
       <>
         <div className="container">
           <div class="box">
-            <p></p>
-            <p>Contact Us</p>
-            <p>{msg}</p>
-            <div className="output"></div>
-            <p></p>
-            <div>
-              <form>
-                <label>* First Name: </label><input value={txtfirstname} onChange={(e)=>setFirstname(e.target.value)} name="txtfirstname" type="text" maxLength={20} placeholder="* firstname required" /><br></br>
-                <label>* Last Name: </label><input value={txtlastname}  onChange={(e)=>setLastname(e.target.value)} name="txtlastname" type="text" maxLength={20}  placeholder="* lastname required"/><br></br>
-                <label>* Email: </label><input value={txtemail}  onChange={(e)=>setEmail(e.target.value)} name="txtemail" type="text"  maxLength={30}  placeholder="* email required"/><br></br>
-                <label>* Comment: </label><br></br>
-                <textarea value={txtcomment}  onChange={(e)=>setComment(e.target.value)} name="txtcomment" rows={5} cols={30}  placeholder="* comment required"/><p></p>
-                <button onClick={handleFormSubmit}>Submit</button>
-                {"   "}
-                <a href="#/" onClick={handleFormReset}>reset</a>
-              </form>
+            <div class="text">
+              <p></p>
+              <p>Contact Us</p>
+              <p>{msg}</p>
+              <div className="output"></div>
+              <p></p>
+              <div>
+                <form>
+                  <label>* First Name: </label><input value={txtfirstname} onChange={(e)=>setFirstname(e.target.value)} name="txtfirstname" type="text" maxLength={20} placeholder="* firstname required" /><br></br>
+                  <label>* Last Name: </label><input value={txtlastname}  onChange={(e)=>setLastname(e.target.value)} name="txtlastname" type="text" maxLength={20}  placeholder="* lastname required"/><br></br>
+                  <label>* Email: </label><input value={txtemail}  onChange={(e)=>setEmail(e.target.value)} name="txtemail" type="text"  maxLength={30}  placeholder="* email required"/><br></br>
+                  <label>* Comment: </label><br></br>
+                  <textarea value={txtcomment}  onChange={(e)=>setComment(e.target.value)} name="txtcomment" rows={5} cols={30}  placeholder="* comment required"/><p></p>
+                  <button onClick={handleFormSubmit}>Submit</button>
+                  {"   "}
+                  <a href="#/" onClick={handleFormReset}>reset</a>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -128,3 +130,4 @@ function ContactUs() {
   
   export default ContactUs;
   
+
